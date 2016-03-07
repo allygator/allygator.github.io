@@ -1,39 +1,115 @@
+function getPrice() {
+	
+	var name = document.getElementById("ingredientName").value.toLowerCase();
+	name =name.replace(/\s/g, '');
+	var item = window[name];
+	
+	if(item == undefined)
+	{
+		bundle
+	}
+	else {
+		$("#results").append("Price: "+item.price);
+	}
+}
+
+function getReward() {
+	var name = document.getElementById("recipeName").value.toLowerCase();
+	name =name.replace(/\s/g, '');
+	var item = window[name];
+	
+	if(item == undefined)
+	{
+		console.log("testundefined");
+	} else if (item.reward == undefined){
+		console.log("testnoreward");
+	}
+	else {
+		var content = "<table class='table table-striped'>";
+		content += "<thead><tr><th>Reward</th><th>Amount</th></tr></thead>";
+		content+='<tr><td>'+ item.reward[0][0]+"</td><td>"+ item.reward[0][1]+"</td></tr>";
+		content+="</table>";
+		
+		$("#results").append(content);
+	}
+}
+
+function getItems(){
+	
+	var name = document.getElementById("recipeName").value.toLowerCase();
+	name =name.replace(/\s/g, '');
+	var item = window[name];
+	
+	if(item == undefined)
+	{
+		$("#results").html("");
+		$("#results").append("That isnt in Stardew Valley.");
+		console.log("UNDEFINED");
+	}
+	else {
+		$("#results").html("");
+		var content = "<table class='table table-striped'>";
+		content += "<thead><tr><th>Item</th><th>Amount</th></tr></thead>";
+		var i;
+		for(i=0;i<item.items.length;i++){
+			content+='<tr><td>'+ item.items[i][0]+"</td><td>"+ item.items[i][1]+"</td></tr>";
+		}
+		content+="</table>";
+		$("#results").append(content);
+		//Make a for-loop through all of uses, puting uses[x][0] and uses[x][1]
+		//to fill the results box.
+		
+	}
+}
+
+$("#ingredientName").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#ingredientButton").click();
+    }
+});
+
+$("#recipeButton").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#recipeButton").click();
+    }
+});
+
 var exoticforagingbundle = {
-	"items":[["Cactus Fruit",1],["Cave Carrot",1],["Coconut",1],["Maple Syrup",1],["Morel",1],["Oak Resin",1],["Pine Tar",1],["Purple Mushroom",1],["Red Mushroom",1],
-	"reward":[["Autumn's Bounty",1]],
+	"items":[["Cactus Fruit",1],["Cave Carrot",1],["Coconut",1],["Maple Syrup",1],["Morel",1],["Oak Resin",1],["Pine Tar",1],["Purple Mushroom",1],["Red Mushroom",1]],
+	"reward":[["Autumn's Bounty",1]]
 };
 var adventurersbundle = {
-	"items":[["Bat Wing",1],["Slime",1],["Solar Essence",1],["Void Essence",1],
+	"items":[["Bat Wing",1],["Slime",1],["Solar Essence",1],["Void Essence",1]],
 	"reward" :[["Small Magnet Ring",1]],
-}
+};
 var animalbundle = {
-	"items":[,["Duck Egg",1],["Large White Egg",1],["Large Brown Egg",1],["Large Goat Milk",1],["Wool",1],
+	"items":[,["Duck Egg",1],["Large White Egg",1],["Large Brown Egg",1],["Large Goat Milk",1],["Wool",1]],
 	"reward" :[["Cheese Press",1]],
-}
+};
 var artisanbundle = {
-	"items":[["Apple",1],["Apricot",1],["Cheese",1],["Cherry",1],["Cloth",1],["Goat Cheese",1],["Honey",1],["Jelly",1],["Orange",1],["Peach",1],["Pomegranate",1],["Truffle Oil",1],
-	"reward" :[["Keg",1]];
-}
+	"items":[["Apple",1],["Apricot",1],["Cheese",1],["Cherry",1],["Cloth",1],["Goat Cheese",1],["Honey",1],["Jelly",1],["Orange",1],["Peach",1],["Pomegranate",1],["Truffle Oil",1]],
+	"reward" :[["Keg",1]]
+};
 var blacksmithsbundle = {
-	"items":[["Copper Bar",1],["Gold Bar",1],["Iron Bar",1],
+	"items":[["Copper Bar",1],["Gold Bar",1],["Iron Bar",1]],
 	reward:[["Furnace",1]]
-}
+};
 var chefsbundle = {
-	"items":[["Fiddlehead Fern",1],["Fried Egg",1],["Maki Roll",1],["Maple Syrup",1],["Poppy",1],["Truffle",1],
+	"items":[["Fiddlehead Fern",1],["Fried Egg",1],["Maki Roll",1],["Maple Syrup",1],["Poppy",1],["Truffle",1]],
 	"reward":[["Pink Cake",3]],
-}
+};
 var constructionbundle = {
-	"items":[["Hardwood",10],["Stone",99],["Wood",198],
+	"items":[["Hardwood",10],["Stone",99],["Wood",198]],
 	"reward":[["Charcoal Kiln",1]]
-}
+};
 var crabpotbundle = {
-	"items":[["Clam",1],["Cockle",1],["Crab",1],["Crayfish",1],["Lobster",1],["Mussel",1],["Oyster",1],["Periwinkle",1],["Shrimp",1],["Snail",1],
+	"items":[["Clam",1],["Cockle",1],["Crab",1],["Crayfish",1],["Lobster",1],["Mussel",1],["Oyster",1],["Periwinkle",1],["Shrimp",1],["Snail",1]],
 	"reward":[["Crab Pot",3]]
-}
+};
 var dyebundle = {
-	"items":[["Aquamarine",1],["Duck Feather",1],["Red Cabbage",1],["Red Mushroom",1],["Sea Urchin",1],["Sunflower",1],
+	"items":[["Aquamarine",1],["Duck Feather",1],["Red Cabbage",1],["Red Mushroom",1],["Sea Urchin",1],["Sunflower",1]],
 	"reward":[["Seed Maker",1]]
-}
+};
 var amaranth ={
 	"uses":[["Salmon Dinner",1]],
 	"price": 150,
@@ -279,78 +355,3 @@ function getUses()
 	}
 };
 
-function getPrice() {
-	
-	var name = document.getElementById("ingredientName").value.toLowerCase();
-	name =name.replace(/\s/g, '');
-	var item = window[name];
-	
-	if(item == undefined)
-	{
-		bundle
-	}
-	else {
-		$("#results").append("Price: "+item.price);
-	}
-}
-
-function getReward() {
-	var name = document.getElementById("recipeName").value.toLowerCase();
-	name =name.replace(/\s/g, '');
-	var item = window[name];
-	
-	if(item == undefined)
-	{
-		console.log("testundefined");
-	} else if (item.reward == undefined){
-		console.log("testnoreward");
-	}
-	else {
-		var content = "<table class='table table-striped'>";
-		content += "<thead><tr><th>Reward</th><th>Amount</th></tr></thead>";
-		content+='<tr><td>'+ item.reward[0][0]+"</td><td>"+ item.reward[0][1]+"</td></tr>";
-		content+="</table>";
-		
-		$("#results").append(content);
-	}
-}
-
-function getItems(){
-	
-	var name = document.getElementById("recipeName").value.toLowerCase();
-	name =name.replace(/\s/g, '');
-	var item = window[name];
-	
-	if(item == undefined)
-	{
-		$("#results").html("");
-		$("#results").append("That isnt in Stardew Valley.");
-		console.log("UNDEFINED");
-	}
-	else {
-		$("#results").html("");
-		var content = "<table class='table table-striped'>";
-		content += "<thead><tr><th>Item</th><th>Amount</th></tr></thead>";
-		var i;
-		for(i=0;i<item.items.length;i++){
-			content+='<tr><td>'+ item.items[i][0]+"</td><td>"+ item.items[i][1]+"</td></tr>";
-		}
-		content+="</table>";
-		$("#results").append(content);
-		//Make a for-loop through all of uses, puting uses[x][0] and uses[x][1]
-		//to fill the results box.
-		
-	}
-}
-
-$("#ingredientName").keyup(function(event){
-    if(event.keyCode == 13){
-        $("#ingredientButton").click();
-    }
-});
-
-$("#recipeButton").keyup(function(event){
-    if(event.keyCode == 13){
-        $("#recipeButton").click();
-    }
-});
