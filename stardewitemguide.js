@@ -1,3 +1,39 @@
+var exoticforagingbundle = {
+	"items":[["Cactus Fruit",1],["Cave Carrot",1],["Coconut",1],["Maple Syrup",1],["Morel",1],["Oak Resin",1],["Pine Tar",1],["Purple Mushroom",1],["Red Mushroom",1],
+	"reward" :[["Autumn's Bounty",1]],
+};
+var adventurersbundle = {
+	"items":[["Bat Wing",1],["Slime",1],["Solar Essence",1],["Void Essence",1],
+	"reward" :[["Small Magnet Ring",1]],
+}
+var animalbundle = {
+	"items":[,["Duck Egg",1],["Large White Egg",1],["Large Brown Egg",1],["Large Goat Milk",1],["Wool",1],
+	"reward" :[["Cheese Press",1]],
+}
+var artisanbundle = {
+	"items":[["Apple",1],["Apricot",1],["Cheese",1],["Cherry",1],["Cloth",1],["Goat Cheese",1],["Honey",1],["Jelly",1],["Orange",1],["Peach",1],["Pomegranate",1],["Truffle Oil",1],
+	"reward" :[["Keg",1]];
+}
+var blacksmithsbundle = {
+	"items":[["Copper Bar",1],["Gold Bar",1],["Iron Bar",1],
+	reward:[["Furnace",1]]
+}
+var chefsbundle = {
+	"items":[["Fiddlehead Fern",1],["Fried Egg",1],["Maki Roll",1],["Maple Syrup",1],["Poppy",1],["Truffle",1],
+	"reward":[["Pink Cake",3]],
+}
+var constructionbundle = {
+	"items":[["Hardwood",10],["Stone",99],["Wood",198],
+	"reward":[["Charcoal Kiln",1]]
+}
+var crabpotbundle = {
+	"items":[["Clam",1],["Cockle",1],["Crab",1],["Crayfish",1],["Lobster",1],["Mussel",1],["Oyster",1],["Periwinkle",1],["Shrimp",1],["Snail",1],
+	"reward":[["Crab Pot",3]]
+}
+var dyebundle = {
+	"items":[["Aquamarine",1],["Duck Feather",1],["Red Cabbage",1],["Red Mushroom",1],["Sea Urchin",1],["Sunflower",1],
+	"reward":[["Seed Maker",1]]
+}
 var amaranth ={
 	"uses":[["Salmon Dinner",1]],
 	"price": 150,
