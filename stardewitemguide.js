@@ -1,6 +1,6 @@
 var exoticforagingbundle = {
 	"items":[["Cactus Fruit",1],["Cave Carrot",1],["Coconut",1],["Maple Syrup",1],["Morel",1],["Oak Resin",1],["Pine Tar",1],["Purple Mushroom",1],["Red Mushroom",1],
-	"reward" :[["Autumn's Bounty",1]],
+	"reward":[["Autumn's Bounty",1]],
 };
 var adventurersbundle = {
 	"items":[["Bat Wing",1],["Slime",1],["Solar Essence",1],["Void Essence",1],
