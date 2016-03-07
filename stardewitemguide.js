@@ -91,7 +91,7 @@ var artisanbundle = {
 	"reward" :[["Keg",1]]
 };
 var blacksmithsbundle = {
-	"items":[["Copper Bar",1],["Gold Bar",1],["Iron Bar",1]],
+	"items":[["Copper Bar",1],["Gold Bar",1],["Iron Bar",1],],
 	reward:[["Furnace",1]]
 };
 var chefsbundle = {
@@ -109,6 +109,62 @@ var crabpotbundle = {
 var dyebundle = {
 	"items":[["Aquamarine",1],["Duck Feather",1],["Red Cabbage",1],["Red Mushroom",1],["Sea Urchin",1],["Sunflower",1]],
 	"reward":[["Seed Maker",1]]
+};
+var enchantersbundle = {
+	"items":[["Oak Resin",1],["Pomegranate",1],["Rabbits Foot",1],["Wine",1]],
+	"reward":[["Gold Bar",5]]
+};
+var exoticforagingbundle = {
+	"items":[,["Cactus Fruit",1],["Cave Carrot",1],["Coconut",1],["Maple Syrup",1],["Morel",1],["Oak Resin",1],["Pine Tar",1],["Purple Mushroom",1],["Red Mushroom",1],],
+	"reward":[["Autumn's Bounty",5]]
+};
+var fallcropsbundle = {
+	"items":[["Corn",1],["Eggplant",1],["Pumpkin",1],["Yam",1],],
+	"reward":[["Bee House",1]]
+};
+var fieldresearchbundle = {
+	"items":[["Chub",1],["Frozen Geode",1],["Nautilus Shell",1],["Purple Mushroom",1],],
+	"reward":[["Recycling Machine",1]]
+};
+var fodderbundle = {
+	"items":[["Apple",1],["Hay",1],["Wheat",1],],
+	"reward":[["Heater",1]]
+};
+var geologistssbundle = {
+	"items":[["Earth Crystal",1],["Fire Quartz",1],["Frozen Tear",1],["Quartz",1],],
+	"reward":[["Omni Geode",5]]
+};
+var lakefishbundle = {
+	"items":[["Bullhead",1],["Carp",1],["Largemouth Bass",1],["Sturgeon",1],],
+	"reward":[["Dressed Spinner",1]]
+};
+var nightfishingbundle = {
+	"items":[["Bream",1],["Eel",1],["Walleye",1],],
+	"reward":[["Small Glow Ring",1]]
+};
+var oceanfishbundle = {
+	"items":[["Red Snapper",1],["Sardine",1],["Tilapia",1],["Tuna",1]],
+	"reward":[["Warp Totem Beach",5]]
+};
+var qualitycropsbundle = {
+	"items":[["(Gold) Parsnip",5],["(Gold) Corn",5],["(Gold) Pumpkin",5],["(Gold) Melon",5],],
+	"reward":[["Preserves Jar",1]]
+};
+var riverfishbundle = {
+	"items":[,["Catfish",1],["Shad",1],["Sunfish",1],["Tiger Trout",1],],
+	"reward":[["Bait",30]]
+};
+var specialtyfishbundle = {
+	"items":[["Ghostfish",1],["Pufferfish",1],["Sandfish",1],["Woodskip",1],],
+	"reward":[["Dish O' The Sea",1]]
+};
+var springcropsbundle = {
+	"items":[["Cauliflower",1],["Green Bean",1],["Parsnip",1],["Potato",1],],
+	"reward":[["Speed-Gro",1]]
+};
+var summercropsbundle = {
+	"items":[["Blueberry",1],["Hot Pepper",1],["Melon",1],["Tomato",1],],
+	"reward":[["Quality Sprinkler",1]]
 };
 var amaranth ={
 	"uses":[["Salmon Dinner",1]],
