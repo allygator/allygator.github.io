@@ -1,0 +1,14 @@
+#results {
+	color: white;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td {
+   background-color: #9CDBFD;
+   color: black;
+}
+
+.table-striped > tbody > tr:nth-child(2n) > td  {
+   background-color: white;
+   color: black;
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Stardew Valley Item Guide</title>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <link href="style.css" rel="stylesheet"> 
+
+   </head>
+   <body style="background-image:url(assets/stardewbackground.png)">
+     
+	 <div class="container" id="main" style="margin-top:15px">
+	 <div class="row">
+		<div class="col-lg-6">
+		   <div class="input-group">
+			  <input type="text" class="form-control" placeholder="Ingredient Lookup" id="ingredientName">
+			  <span class="input-group-btn">
+			  <button id="ingredientButton" class="btn btn-default" type="button" onclick="getUses(); getPrice()">Go!</button>
+			  </span>
+		   </div>
+		</div>
+		<div class="col-lg-6">
+		   <div class="input-group">
+			  <input type="text" class="form-control" placeholder="Recipe Lookup" id="recipeName">
+			  <span class="input-group-btn">
+			  <button id="recipeButton" class="btn btn-default" type="button" onclick="getItems(); getReward()">Go!</button>
+			  </span>
+		   </div>
+		</div>
+      </div>
+	  
+	  <div class="col-lg-12" style="height:100%;background: rgba(255, 255, 255, .1); margin-top: 75px; min-height:200px" id="results">
+	
+
+	  </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <script src="stardewitemguide.js"></script>
+	  
+   </body>
+</html>
