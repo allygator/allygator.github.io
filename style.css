@@ -2,6 +2,10 @@
 	color: white;
 }
 
+.table {
+	table-layout: fixed;
+}
+
 .table-striped > tbody > tr:nth-child(2n+1) > td {
    background-color: #9CDBFD;
    color: black;

@@ -6,7 +6,7 @@ function getPrice() {
 	
 	if(item == undefined)
 	{
-		bundle
+
 	}
 	else {
 		$("#results").append("Price: "+item.price);
@@ -68,7 +68,7 @@ $("#ingredientName").keyup(function(event){
     }
 });
 
-$("#recipeButton").keyup(function(event){
+$("#recipeName").keyup(function(event){
     if(event.keyCode == 13){
         $("#recipeButton").click();
     }
@@ -81,10 +81,12 @@ var exoticforagingbundle = {
 var adventurersbundle = {
 	"items":[["Bat Wing",1],["Slime",1],["Solar Essence",1],["Void Essence",1]],
 	"reward" :[["Small Magnet Ring",1]],
+	"price":0,
 };
 var animalbundle = {
 	"items":[,["Duck Egg",1],["Large White Egg",1],["Large Brown Egg",1],["Large Goat Milk",1],["Wool",1]],
 	"reward" :[["Cheese Press",1]],
+	"price":0,
 };
 var artisanbundle = {
 	"items":[["Apple",1],["Apricot",1],["Cheese",1],["Cherry",1],["Cloth",1],["Goat Cheese",1],["Honey",1],["Jelly",1],["Orange",1],["Peach",1],["Pomegranate",1],["Truffle Oil",1]],
@@ -97,6 +99,7 @@ var blacksmithsbundle = {
 var chefsbundle = {
 	"items":[["Fiddlehead Fern",1],["Fried Egg",1],["Maki Roll",1],["Maple Syrup",1],["Poppy",1],["Truffle",1]],
 	"reward":[["Pink Cake",3]],
+	"price":0,
 };
 var constructionbundle = {
 	"items":[["Hardwood",10],["Stone",99],["Wood",198]],
@@ -166,6 +169,22 @@ var summercropsbundle = {
 	"items":[["Blueberry",1],["Hot Pepper",1],["Melon",1],["Tomato",1],],
 	"reward":[["Quality Sprinkler",1]]
 };
+var springforagingbundle = {
+	"items" :[["Wild Horseradish",1],["Daffodil",3],["Leek",1],["Dandelion",1]],
+	"reward" :[["Spring Seeds",30]]
+}
+var summerforagingbundle = {
+	"items" :[["Grape",1],["Spice Berry",3],["Sweet Pea",1]],
+	"reward" :[["Summer Seeds",30]]
+}
+var fallforagingbundle = {
+	"items" :[["Common Mushroom",1],["Wild Plum",3],["Hazelnut",1],["Blackberry",1]],
+	"reward" :[["Fall Seeds",30]]
+}
+var winterforagingbundle = {
+	"items" :[["Winter Root",1],["Crystal Fruit",3],["Snow Yam",1],["Crocus",1]],
+	"reward" :[["Winter Seeds",30]]
+};
 var amaranth ={
 	"uses":[["Salmon Dinner",1]],
 	"price": 150,
@@ -182,35 +201,22 @@ var apple ={
 	"uses":[["Cranberry Candy",1],["Fodder Bundle",3],["Artisan Bundle",1]],
 	"price": 100,
 };
-var springforagingbundle = {
-	"items" :[["Wild Horseradish",1],["Daffodil",3],["Leek",1],["Dandelion",1]],
-	"reward" :[["Spring Seeds",30]]
-}
-var summerforagingbundle = {
-	"items" :[["Grape",1],["Spice Berry",3],["Sweet Pea",1]],
-	"reward" :[["Summer Seeds",30]]
-}
-var fallforagingbundle = {
-	"items" :[["Common Mushroom",1],["Wild Plum",3],["Hazelnut",1],["Blackberry",1]],
-	"reward" :[["Fall Seeds",30]]
-}
-var winterforagingbundle = {
-	"items" :[["Winter Root",1],["Crystal Fruit",3],["Snow Yam",1],["Crocus",1]],
-	"reward" :[["Winter Seeds",30]]
-}
-var constructionbundle = {
-	"items" :[["Wood",99],["Wood",99],["Stone",99],["Hardwood",10]],
-	"reward" :[["Charcoal Kiln",1]]
-}
 var apricot ={
-	"uses":[["Fruit Salad",1]],
+	"uses":[["Fruit Salad",1],["Artisan Bundle",1]],
 	"price": 50,
 };
 var artichoke ={
 	"uses":[["Artichoke Dip",1]],
 	"price": 160,
 };
-var batwing ={};
+var aquamarine = {
+	"uses":[["Dye Bundle",1]],
+	"price":0,
+};
+var batwing ={
+	"uses":[["Adventurer's Bundle",10],],
+	"price":0,
+};
 var batterypack ={};
 var beet ={};
 var blackberry ={
@@ -218,32 +224,95 @@ var blackberry ={
 	"price":0,
 };
 var bluejazz ={};
-var blueberry ={};
+var blueberry ={
+	"uses":[["Summer Crops Bundle",1],],
+	"price":0,
+};
 var bokchoy ={};
 var bread ={};
-var bream ={};
+var bream ={
+	"uses":[["Night Fishing Bundle",1]],
+	"price":0,
+};
+var bullhead = {
+	"uses":[["Lake Fish Bundle",1]],
+	"price":0,
+}
 var bugmeat ={};
-var carp ={};
-var cauliflower ={};
-var cavecarrot ={};
-var cheese ={};
-var clam ={};
+var cactusfruit = {
+	"uses":[["Exotic Foraging Bundle",1]],
+	"price":0,
+};
+var carp ={
+	"uses":[["Lake Fish Bundle",1]],
+	"price":0,
+};
+var catfish = {
+	"uses":[["River Fish Bundle",1]],
+	"price":0,
+};
+var cauliflower ={
+	"uses":[["Spring Crops Bundle",1]],
+	"price":0,
+};
+var cavecarrot ={
+	"uses":[["Exotic Foraging Bundle",1]],
+	"price":0,
+};
+var cheese ={
+	"uses":[["Artisan Bundle",1]],
+	"price":0,
+};
+var cherry = {
+	"uses":[["Artisan Bundle",1]],
+	"price":0,
+};
+var chub = {
+	"uses":[["Field Research Bundle",1]],
+	"price":0,
+};
+var clam ={
+	"uses":[["Crab Pot Bundle",1]],
+	"price":0,
+};
 var clay ={};
-var cloth ={};
+var cloth ={
+	"uses":[["Artisan Bundle",1]],
+	"price":0,
+};
 var coal ={};
-var coconut ={};
+var cockle = {
+	"uses":[["Crab Pot Bundle",1]],
+	"price":0,
+};
+var coconut ={
+	"uses":[["Exotic Foraging Bundle",1]],
+	"price":0,
+};
 var commonmushroom ={
 	"uses":[["Fall Foraging Bundle",1]],
 	"price":0
 };
-var copperbar ={};
+var copperbar ={
+	"uses":[["Blacksmith's Bundle",1]],
+	"price":0,
+};
 var copperore ={};
-var corn ={};
-var crab ={};
+var corn ={
+	"uses":[["Fall Crops Bundle",1]],
+	"price":0,
+};
+var crab ={
+	"uses":[["Crab Pot Bundle",1]],
+	"price":0,
+};
 var cranberry ={
 	
 };
-var crayfish ={};
+var crayfish ={
+	"uses":[["Crab Pot Bundle",1]],
+	"price":0,
+};
 var crocus ={
 	"uses":[["Winter Foraging Bundle",1]],
 	"price":0
@@ -256,87 +325,309 @@ var daffodil ={
 	"uses":[["Spring Foraging Bundle",1]],
 	"price":0
 };
+var dishothesea = {
+	"items":[[]],
+	"price":0,
+};
 var dandelion ={
 	"uses":[["Spring Foraging Bundle",1]],
 	"price":0
 };
 var diamond ={};
-var earthcrystal ={};
-var eel ={};
+var duckegg = {};
+var largeduckegg = {
+	"uses":[["Animal Bundle",1]],
+	"price":0,
+};
+var duckfeather = {
+	"uses":[["Dye Bundle",1]],
+	"price":0,
+};
+var earthcrystal ={
+	"uses":[["Geologists's Bundle",1]],
+	"price":0,
+};
+var eel ={
+	"uses":[["Night Fishing Bundle",1]],
+	"price":0,
+};
+var largebrownegg ={
+	"uses":[["Animal Bundle",1]],
+	"price":0,
+};
+var largewhiteegg ={
+	"uses":[["Animal Bundle",1]],
+	"price":0,
+};
 var egg ={};
-var eggplant ={};
+var eggplant ={
+	"uses":[["Fall Crops Bundle",1]],
+	"price":0,
+};
 var fiber ={};
-var fiddleheadfern ={};
-var firequartz ={};
+var fiddleheadfern ={
+	"uses":[["Chef's Bundle",1]],
+	"price":0,
+};
+var firequartz ={
+	"uses":[["Geologists's Bundle",1]],
+	"price":0,
+};
 var fish ={};
-var friedegg ={};
-var frozentear ={};
+var friedegg ={
+	"uses":[["Chef's Bundle",1]],
+	"price":0,
+};
+var frozengeode = {
+	"uses":[["Field Research Bundle",1]],
+	"price":0,
+};
+var frozentear ={
+	"uses":[["Geologists's Bundle",1]],
+	"price":0,
+};
 var garlic ={};
-var goldbar ={};
-var goldore ={};
+var ghostfish = {
+	"uses":[["Specialty Fish Bundle",1]],
+	"price":0,
+};
+var goatcheese = {
+	"uses":[["Artisan Bundle",1]],
+	"price":0,
+};
+var largegoatmilk = {
+	"uses":[["Animal Bundle",1]],
+	"price":0,
+};
+var goldbar ={
+	"uses":[["Blacksmith's Bundle",1],["Enchanter's Bundle",5]],
+	"price":0,
+};
+var goldore ={
+	"uses":[["Gold Bar"][5]],
+	"price":0,
+};
 var grape ={
 	"uses":[["Summer Foraging Bundle",1]],
 	"price":0
 };
 var greenalgae ={};
-var greenbean ={};
+var greenbean ={
+	"uses":[["Spring Crops Bundle",1]],
+	"price":0,
+};
 var hardwood ={
 	"uses":[["Construction Bundle",10]],
 	"price":0
 };
 var hashbrowns ={};
+var hay = {
+	"uses":[["Fodder Bundle",10]],
+	"price":0,
+};
 var hazelnut ={
 	"uses":[["Fall Foraging Bundle",1]],
 	"price":0
 };
-var hotpepper ={};
+var honey = {
+	"uses":[["Artisan Bundle",1]],
+	"price":0,
+};
+var hotpepper ={
+	"uses":[["Summer Crops Bundle",1]],
+	"price":1,
+};
 var iridiumbar ={};
-var iridiumore ={};
-var ironbar ={};
-var ironore ={};
+var iridiumore ={
+	"uses":[["Iridium Bar"][5]],
+	"price":0,
+};
+var ironbar ={
+	"uses":[["Blacksmith's Bundle",1]],
+	"price":0,
+};
+var ironore ={
+	"uses":[["Iron Bar"][5]],
+	"price":0,
+};
+var jelly = {
+	"uses":[["Artisan Bundle",1]],
+	"price":0,
+};
 var kale ={};
-var largemouthbass ={};
+var largemouthbass ={
+	"uses":[["Lake Fish Bundle",1]],
+	"price":0,
+};
 var leek ={
 	"uses":[["Spring Foraging Bundle",1]],
 	"price":0
 };
-var lobster ={};
-var maplesyrup ={};
-var mayonnaise ={};
-var melon ={};
+var lobster ={
+	"uses":[["Crab Pot Bundle",1]],
+	"price":0,
+};
+var makiroll = {
+	"uses":[["Chef's Bundle",1]],
+	"price":0,
+};
+var maplesyrup ={
+	"uses":[["Chef's Bundle",1],["Exotic Foraging Bundle",1]],
+	"price":0,
+};
+var mayonnaise ={
+	"items:":[["Egg"][1]],
+	"price":0,
+};
+var melon ={
+	"uses":[["Summer Crops Bundle",1]],
+	"price":0,
+};
+var largemilk ={
+	"uses":[["Animal Bundle",1]],
+	"price":0,
+};
 var milk ={};
-var morel ={};
-var mussel ={};
-var oakresin ={};
+var morel ={
+	"uses":[["Exotic Foraging Bundle",1]],
+	"price":0,
+};
+var mussel ={
+	"uses":[["Crab Pot Bundle",1]],
+	"price":0,
+};
+var nautilusshell = {
+	"uses":[["Field Research Bundle",1]],
+	"price":0,
+};
+var oakresin ={
+	"uses":[["Enchanter's Bundle",1],["Exotic Foraging Bundle",1]],
+	"price":0,
+};
 var oil ={};
+var orange = {
+	"uses":[["Artisan Bundle",1]],
+	"price":0,
+};
 var omelet ={};
+var oyster = {
+	"uses":[["Crab Pot Bundle",1]],
+	"price":0,
+};
 var pancakes ={};
-var parsnip ={};
-var periwinkle ={};
-var pinetar ={};
-var poppy ={};
-var potato ={};
-var pumpkin ={};
-var quartz ={};
+var parsnip ={
+	"uses":[["Spring Crops Bundle",1]],
+	"price":0,
+};
+var peach = {
+	"uses":[["Artisan Bundle",1]],
+	"price":0,
+};
+var periwinkle ={
+	"uses":[["Crab Pot Bundle",1]],
+	"price":0,
+};
+var pinetar ={
+	"uses":[["Exotic Foraging Bundle",1]],
+	"price":0,
+};
+var poppy ={
+	"uses":[["Chef's Bundle",1]],
+	"price":0,
+};
+var potato ={
+	"uses":[["Spring Crops Bundle",1]],
+	"price":0,
+};
+var pomegranate = {
+	"uses":[["Artisan Bundle",1],["Enchanter's Bundle",1]],
+	"price":0,
+};
+var pufferfish = {
+	"uses":[["Specialty Fish Bundle",1]],
+	"price":0,
+};
+var pumpkin ={
+	"uses":[["Fall Crops Bundle",1]],
+	"price":0,
+};
+var purplemushroom = {
+	"uses":[["Exotic Foraging Bundle",1],["Field Research Bundle",1]],
+	"price":0,
+};
+var qualityfertilizer = {
+	"items":[["sap",2],["Any Fish",1]],
+	"price":0,
+};
+var qualitysprinkler = {
+	"items":[["Iron Bar",1],["Gold Bar",1],["Refined Quartz",1]],
+	"price":0,
+};
+var quartz ={
+	"uses":[["Geologists's Bundle",1]],
+	"price":0,
+};
+var rabbitsfoot = {
+	"uses":[["Enchanter's Bundle",1]],
+	"price":0,
+};
 var radish ={};
 var rainbowtrout ={};
-var redcabbage ={};
+var redcabbage ={
+	"uses":[["Dye Bundle",1]],
+	"price":0,
+};
+var redmushroom = {
+	"uses":[["Dye Bundle",1],["Exotic Foraging Bundle",1]],
+	"price":0,
+};
+var redsnapper = {
+	"uses":[["Ocean Fish Bundle",1]],
+	"price":0,
+};
+var sandfish = {
+	"uses":[["Specialty Fish Bundle",1]],
+	"price":0,
+};
 var refinedquartz ={};
 var rhubarb ={};
 var rice ={};
 var salmon ={};
 var sap ={};
-var sardine ={};
+var sardine ={
+	"uses":[["Ocean Fish Bundle",1]],
+	"price":0,
+};
 var seacucumber ={};
+var seaurchin = {
+	"uses":[["Dye Bundle",1]],
+	"price":0,
+};
 var seaweed ={};
-var shrimp ={};
-var slime ={};
-var snail ={};
+var shad = {
+	"uses":[["River Fish Bundle",1]],
+	"price":0,
+};
+var shrimp ={
+	"uses":[["Crab Pot Bundle",1]],
+	"price":0,
+};
+var slime ={
+	"uses":[["Adventurer's Bundle",99]],
+	"price":0,
+};
+var snail ={
+	"uses":[["Crab Pot Bundle",1]],
+	"price":0,
+};
 var snowyam ={
 	"uses":[["Winter Foraging Bundle",1]],
 	"price":0
 };
-var solaressence ={};
+var solaressence ={
+	"uses":[["Adventurer's Bundle",1]],
+	"price":0,
+};
 var spiceberry ={
 	"uses":[["Summer Foraging Bundle",1]],
 	"price":0
@@ -346,17 +637,61 @@ var stone ={
 	"uses":[["Construction Bundle",99]],
 	"price":0
 };
+var sturgeon = {
+	"uses":[["Lake Fish Bundle",1]],
+	"price":0,
+};
 var sugar ={};
-var sunfish ={};
+var sunfish ={
+	"uses":[["River Fish Bundle",1]],
+	"price":0,
+};
+var sunflower = {
+	"uses":[["Dye Bundle",1]],
+	"price":0,
+};
 var sweetpea ={
 	"uses":[["Summer Foraging Bundle",1]],
 	"price":0
 };
-var tomato ={};
+var tigertrout = {
+	"uses":[["River Fish Bundle",1]],
+	"price":0,
+};
+var tilapia = {
+	"uses":[["Ocean Fish Bundle",1]],
+	"price":0,
+};
+var tomato ={
+	"uses":[["Summer Crops Bundle",1]],
+	"price":0,
+};
 var tortilla ={};
-var tuna ={};
+var truffle = {
+	"uses":[["Chef's Bundle",1]],
+	"price":0,
+};
+var truffleoil = {
+	"uses":[["Artisan Bundle",1]],
+	"price":0,
+};
+var tuna ={
+	"uses":[["Ocean Fish Bundle",1]],
+	"price":0,
+};
 var vinegar ={};
-var voidessence ={};
+var voidessence ={
+	"uses":[["Adventurer's Bundle",1]],
+	"price":0,
+};
+var walleye = {
+	"uses":[["Night Fishing Bundle",1]],
+	"price":0,
+};
+var wheat = {
+	"uses":[["Fodder Bundle",10]],
+	"price":0,
+};
 var wheatflour ={};
 var whitealgae ={};
 var wildhorseradish ={
@@ -367,6 +702,10 @@ var wildplum ={
 	"uses":[["Fall Foraging Bundle",1]],
 	"price":0
 };
+var wine = {
+	"uses":[["Enchanter's Bundle",1]],
+	"price":0,
+};
 var winterroot ={
 	"uses":[["Winter Foraging Bundle",1]],
 	"price":0
@@ -375,7 +714,18 @@ var wood ={
 	"uses":[["Construction Bundle",(99+99)]],
 	"price":0
 };
-var yam ={};
+var woodskip = {
+	"uses":[["Specialty Fish Bundle",1]],
+	"price":0,
+};
+var wool = {
+	"uses":[["Animal Bundle",1]],
+	"price":0,
+};
+var yam ={
+	"uses":[["Fall Crops Bundle",1]],
+	"price":0,
+};
 var trash ={};
 var brokencd ={};
 var driftwood ={};
