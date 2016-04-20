@@ -23,6 +23,37 @@ body {
     margin-bottom: 30px;
 }
 
+.navbar-inverse {
+    background-color: #0C1319;
+    border-color: #080808;
+}
+
+.btn-stardew {
+    color: #fff;
+    background-color: #138CFD;
+    border-color: #415EB1;
+}
+
+.btn-stardew:hover {
+    color: #fff;
+    background-color: #0685FA;
+    border-color: #415EB1;
+	text-shadow: 0 0 2rem #97EAF0;
+}
+
+.btn-heroes {
+    color: #fff;
+    background-color: #262977;
+    border-color: #415EB1;
+}
+
+.btn-heroes:hover {
+    color: #fff;
+    background-color: #1E1647;
+    border-color: #415EB1;
+	text-shadow: 0 0 2rem #009cff;
+}
+
 .hProject {
 	background: url(assets/nav_background.png) bottom no-repeat;
 	background-color:#08000f;
