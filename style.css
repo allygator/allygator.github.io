@@ -5,12 +5,12 @@
  */
 
 /* Global Styles */
-
 body, html {
     height: 100%;
     margin: 0;
     font: 400 15px/1.8 "Lato", sans-serif;
 }
+
 ::-webkit-scrollbar { 
     display: none; 
 }
@@ -21,10 +21,21 @@ body, html {
     }
 }
 
+h1 {
+    font-size: 28px;
+    letter-spacing: 10px;
+}
+
+h2 {
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
 h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    padding-top:55px;
 }
 
 h4 {
@@ -35,6 +46,40 @@ h4 {
 h5 {
     font-size:18px;
 }
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.nobullet {
+    list-style-type: none;
+}
+
+/* Background Info */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("assets/dayskyline.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url("assets/garden.jpg");
+    min-height: 700px;
+    opacity: 0.65;
+}
+
+.bgimg-3 {
+  background-image: url("assets/glass.jpg");
+  min-height: 400px;
+}
+
 /* Day Mode */ 
 .day {
     border-color: #e7e7e7;
@@ -49,11 +94,11 @@ h5 {
     border-top: 1px solid #eee;
 }
 
-a {
+.day a {
     color: #1C1D21;
 }
 
-a:hover {
+.day .navbar-nav>li>a:focus, .day .navbar-nav>li>a:hover, .day .navbar-header>a:focus, .day .navbar-header>a:hover {
     color: #1C1D21;
 }
 
@@ -69,12 +114,7 @@ a:hover {
     color: #777;
 }
 
-.day .navbar-nav>li>a:active {
-    color: black;
-}
-
 /* Night Mode */
-
 .night {
     border-color: #2C3032;
     background-color:#353A3D;
@@ -85,6 +125,14 @@ a:hover {
 }
 
 .night .navbar-nav>li>a, .night .navbar-header>a {
+    color: #f8f8f8;
+}
+
+.night .navbar-nav>li>a:focus, .night .navbar-nav>li>a:hover, .night .navbar-header>a:focus, .night .navbar-header>a:hover, .night a:hover, .night a:focus {
+    color: #E4C3D1;
+}
+
+.night a {
     color: #f8f8f8;
 }
 
@@ -124,32 +172,36 @@ a:hover {
     }
 }
 
-/* Background Info */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-.bgimg-1 {
-  background-image: url("assets/dayskyline.jpg");
-  min-height: 100%;
+.fixed {
+    position: fixed;
+    top: 0;
 }
 
-.bgimg-2 {
-    background-image: url("assets/garden.jpg");
-    min-height: 700px;
-    opacity: 0.65;
+/* Intro Screen */ 
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
 }
 
-.bgimg-3 {
-  background-image: url("assets/glass.jpg");
-  min-height: 400px;
+#name {
+    min-width: 180px;
+    background-color: #222527;
+    color: #fff;
+    padding: 10px;
+    width:50%;
+    margin:auto;
 }
 
-#sub {
+#desc {
+    background-color: #222527;
+    color: #fff;
+    padding: 10px;
+    width:70%;
+    margin:auto;
     margin-top:-2%;
 }
 
@@ -173,48 +225,6 @@ a:hover {
 
 .row {
     margin-bottom: 3%;
-}
-
-.caption {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    right: 5%;
-    width: 80%;
-    text-align: center;
-    color: #000;
-}
-
-.caption h1.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-}
-
-.caption h2.border {
-  background-color: #111;
-  color: #fff;
-  padding: 10px;
-  font-size: 25px;
-  letter-spacing: 5px;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-.nobullet {
-    list-style-type: none;
-}
-
-#sticky {
-}
-
-.fixed {
-    position: fixed;
-    top: 0;
 }
 
 /* The switch - the box around the slider */
@@ -284,8 +294,6 @@ input:checked + .slider:before {
 
 /* Hide default HTML checkbox */
 .switch input {display:none;}
-
-
 
 /** {
     border: 1px solid red;
