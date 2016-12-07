@@ -6,121 +6,287 @@
 
 /* Global Styles */
 
-html,
-body {
+body, html {
     height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+}
+::-webkit-scrollbar { 
+    display: none; 
 }
 
-body {
-    padding-top: 50px;
+ @media (min-width:992px){
+    .container{
+        width: 9;
+    }
 }
 
-.contentcontainer {
-	background: rgba(255, 255, 255, .2);
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
 }
 
-.img-portfolio {
-    margin-bottom: 30px;
+h4 {
+    font-size: 20px;
+    text-transform: uppercase; 
 }
 
-.navbar-inverse {
-    background-color: #0C1319;
-    border-color: #080808;
+h5 {
+    font-size:18px;
+}
+/* Day Mode */ 
+.day {
+    border-color: #e7e7e7;
+    background-color:#FAFAFA;
+    color: #777;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
 }
 
-.btn-stardew {
-    color: #fff;
-    background-color: #138CFD;
-    border-color: #415EB1;
+.day hr {
+    border-top: 1px solid #eee;
 }
 
-.btn-stardew:hover {
-    color: #fff;
-    background-color: #0685FA;
-    border-color: #415EB1;
-	text-shadow: 0 0 2rem #97EAF0;
+a {
+    color: #1C1D21;
 }
 
-.btn-heroes {
-    color: #fff;
-    background-color: #262977;
-    border-color: #415EB1;
+a:hover {
+    color: #1C1D21;
 }
 
-.btn-heroes:hover {
-    color: #fff;
-    background-color: #1E1647;
-    border-color: #415EB1;
-	text-shadow: 0 0 2rem #009cff;
+.day h3 {
+  color: #9E2B62;
 }
 
+.day h4 {
+    color: #9E2B62;
+}
+
+.day .navbar-nav>li>a {
+    color: #777;
+}
+
+.day .navbar-nav>li>a:active {
+    color: black;
+}
+
+/* Night Mode */
+
+.night {
+    border-color: #2C3032;
+    background-color:#353A3D;
+    color: #FAFAFA;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.night .navbar-nav>li>a, .night .navbar-header>a {
+    color: #f8f8f8;
+}
+
+.night h3 {
+  color: #E4C3D1;
+}
+
+.night h4 {
+    color: #E4C3D1;
+}
+
+.night hr {
+    border-top: 1px solid #2C3032;
+}
+
+/* Navigation */
+.startNav {
+    bottom: 0;
+}
+
+.navbar {
+    width:100%;
+    margin-bottom: 0;
+}
+
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 10px 0;
+        -webkit-transition: background .2s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .2s ease-in-out,padding .5s ease-in-out;
+        transition: background .2s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/* Background Info */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("assets/dayskyline.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url("assets/garden.jpg");
+    min-height: 700px;
+    opacity: 0.65;
+}
+
+.bgimg-3 {
+  background-image: url("assets/glass.jpg");
+  min-height: 400px;
+}
+
+#sub {
+    margin-top:-2%;
+}
+
+/* Web Projects */
 .hProject {
-	background: url(assets/nav_background.png) bottom no-repeat;
-	background-color:#08000f;
-	text-align:center;
-	height:215px;
-	width:460px;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-footer {
-    margin: 50px 0;
-}
-
-
-img {
+    background: url(assets/nav_background.png) bottom no-repeat;
+    background-color: #08000f;
+    text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.img-hover:hover {
-    opacity: 0.8;
+.sProject {
+    background-color: #5AD7ED;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Home Page Carousel */
-
-header.carousel {
-    height: 50%;
+.row {
+    margin-bottom: 3%;
 }
 
-header.carousel .item,
-header.carousel .item.active,
-header.carousel .carousel-inner {
-    height: 100%;
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    right: 5%;
+    width: 80%;
+    text-align: center;
+    color: #000;
 }
 
-header.carousel .fill {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
+.caption h1.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
 }
 
-
-/* Footer Styles */
-
-footer {
-    margin: 50px 0;
+.caption h2.border {
+  background-color: #111;
+  color: #fff;
+  padding: 10px;
+  font-size: 25px;
+  letter-spacing: 5px;
 }
 
-/* Responsive Styles */
-
-@media(max-width:991px) {
-    .customer-img,
-    .img-related {
-        margin-bottom: 30px;
-    }
+.uppercase {
+  text-transform: uppercase;
 }
 
-@media(max-width:767px) {
-    .img-portfolio {
-        margin-bottom: 15px;
-    }
-
-    header.carousel .carousel {
-        height: 70%;
-    }
+.nobullet {
+    list-style-type: none;
 }
+
+#sticky {
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 57px;
+  height: 30px;
+}
+
+#right {
+    float: right;
+    padding-top: 10px
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 1px;
+  right: 0;
+  bottom: 0;
+  background-color: #353A3D;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #FAFAFA;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #FAFAFA;
+}
+
+input:checked + .slider:before {
+    background-color:#353A3D;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #FAFAFA;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+
+
+/** {
+    border: 1px solid red;
+}*/
