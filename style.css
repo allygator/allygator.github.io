@@ -215,6 +215,10 @@ ul.nobullet li {
         float:right;
         padding-top: 10px;
     }
+    
+    .sProject {
+        min-height: 188px;
+    }
 }
 
 .fixed {
@@ -263,7 +267,9 @@ ul.nobullet li {
 }
 
 .sProject {
+    background: url(assets/stardewMountains.png) bottom no-repeat;
     background-color: #5AD7ED;
+    background-size: 100% 100%;
     text-align: center;
     display: block;
     margin-left: auto;
@@ -340,14 +346,19 @@ input:checked + .slider:before {
 
 /* Footer */ 
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    text-align: center;
+
 }
 
 /** {
     border: 1px solid red;
-}*/
+}
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+*/
