@@ -31,38 +31,15 @@ function getCookie(cname) {
 
 
 $('#checkbox').on("click", function(evt) {
-    if ($('#checkbox').is(":checked")) {
-        nightOn();
-    } else {
-        nightOff();
-    }
+    nightModeF();
     evt.stopImmediatePropagation();
 });
 
-function nightOn() {
-    $("nav").removeClass("day");
-    $("nav").addClass("night");
-    $("#resume").removeClass("day");
-    $("#resume").addClass("night");
-    $("#projects").removeClass("day");
-    $("#projects").addClass("night");
-    $("#about").removeClass("day");
-    $("#about").addClass("night");
-    $("#footer").removeClass("day");
-    $("#footer").addClass("night");
+function nightModeF() {
+    $("nav").toggleClass("day night");
+    $("#resume").toggleClass("day night");
+    $("#projects").toggleClass("day night");
+    $("#about").toggleClass("day night");
+    $("#footer").toggleClass("day night");
     setCookie("nightmode","true",1);
 };
-
-function nightOff() {
-    $("nav").removeClass("night");
-    $("nav").addClass("day");
-    $("#resume").removeClass("night");
-    $("#resume").addClass("day");
-    $("#projects").removeClass("night");
-    $("#projects").addClass("day");
-    $("#about").removeClass("night");
-    $("#about").addClass("day");
-    $("#footer").removeClass("night");
-    $("#footer").addClass("day");
-    setCookie("nightmode","false",1);
-}
