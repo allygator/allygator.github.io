@@ -1,25 +1,68 @@
-$('.switch').click(function() {
-    if ($('#checkbox').is(":checked")) {
-        $("nav").removeClass("day");
-        $("nav").addClass("night");
-        $("#resume").removeClass("day");
-        $("#resume").addClass("night");
-        $("#projects").removeClass("day");
-        $("#projects").addClass("night");
-        $("#about").removeClass("day");
-        $("#about").addClass("night");
-        $("#footer").removeClass("day");
-        $("#footer").addClass("night");
-    } else {
-        $("nav").removeClass("night");
-        $("nav").addClass("day");
-        $("#resume").removeClass("night");
-        $("#resume").addClass("day");
-        $("#projects").removeClass("night");
-        $("#projects").addClass("day");
-        $("#about").removeClass("night");
-        $("#about").addClass("day");
-        $("#footer").removeClass("night");
-        $("#footer").addClass("day");
+// document.cookie = "nightmode=false expires=Thu, 18 Dec 2013 12:00:00 UTC";
+// console.log(document.cookie);
+
+$(document).ready(function ( ) {
+	if(getCookie("nightmode")=="true") {
+        nightOn();
     }
 });
+
+function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires;
+};
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+};
+
+
+$('#checkbox').on("click", function(evt) {
+    if ($('#checkbox').is(":checked")) {
+        nightOn();
+    } else {
+        nightOff();
+    }
+    evt.stopImmediatePropagation();
+});
+
+function nightOn() {
+    $("nav").removeClass("day");
+    $("nav").addClass("night");
+    $("#resume").removeClass("day");
+    $("#resume").addClass("night");
+    $("#projects").removeClass("day");
+    $("#projects").addClass("night");
+    $("#about").removeClass("day");
+    $("#about").addClass("night");
+    $("#footer").removeClass("day");
+    $("#footer").addClass("night");
+    setCookie("nightmode","true",1);
+};
+
+function nightOff() {
+    $("nav").removeClass("night");
+    $("nav").addClass("day");
+    $("#resume").removeClass("night");
+    $("#resume").addClass("day");
+    $("#projects").removeClass("night");
+    $("#projects").addClass("day");
+    $("#about").removeClass("night");
+    $("#about").addClass("day");
+    $("#footer").removeClass("night");
+    $("#footer").addClass("day");
+    setCookie("nightmode","false",1);
+}
