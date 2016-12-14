@@ -11,9 +11,9 @@ body, html {
     font: 400 15px/1.8 "Lato", sans-serif;
 }
 
-::-webkit-scrollbar { 
+/*::-webkit-scrollbar { 
     display: none; 
-}
+}*/
 
  @media (min-width:992px){
     .container{
@@ -27,24 +27,23 @@ h1 {
 }
 
 h2 {
-    font-size: 25px;
-    letter-spacing: 5px;
-}
-
-h3 {
     letter-spacing: 5px;
     text-transform: uppercase;
     font: 24px "Lato", sans-serif;
     font-weight: 600;
 }
 
-h4 {
+h3 {
     font-size: 20px;
     text-transform: uppercase; 
 }
 
-h5 {
+h4 {
     font-size: 17px;
+}
+
+h5 {
+
 }
 
 .uppercase {
@@ -70,18 +69,18 @@ ul.nobullet li {
 
 }
 .bgimg-1 {
-  background-image: url("assets/dayskyline.jpg");
+  background-image: url("assets/bgImages/alaskasky.jpg");
   min-height: 100%;
 }
 
 .bgimg-2 {
-    background-image: url("assets/garden.jpg");
+    background-image: url("assets/bgImages/garden.jpg");
     min-height: 700px;
     opacity: 0.65;
 }
 
 .bgimg-3 {
-  background-image: url("assets/glass.jpg");
+  background-image: url("assets/bgImages/glass.jpg");
   min-height: 400px;
 }
 
@@ -103,15 +102,15 @@ ul.nobullet li {
     color: #1C1D21;
 }
 
-.day .navbar-nav>li>a:focus, .day .navbar-nav>li>a:hover, .day .navbar-header>a:focus, .day .navbar-header>a:hover {
-    color: #1C1D21;
+.day .navbar-nav>li>a:focus, .day .navbar-nav>li>a:hover, .day .navbar-header>a:focus, .day .navbar-header>a:hover, .day a:hover {
+    color: #9E2B62;
 }
 
-.day h3 {
+.day h2 {
   color: #9E2B62;
 }
 
-.day h4 {
+.day h3 {
     color: #9E2B62;
 }
 
@@ -125,7 +124,9 @@ ul.nobullet li {
     border-color: #2C3032;
 }
 
+
 .day .pbutton:hover, .day .pbutton:focus {
+    color: #FAFAFA;
     background-color: #9E2B62;
     border-color: #9E2B62;
 }
@@ -247,18 +248,20 @@ ul.nobullet li {
     margin:auto;
 }
 
-#desc {
+#desc>p {
     background-color: #222527;
     color: #fff;
     padding: 10px;
     width:70%;
     margin:auto;
     margin-top:-2%;
+    font-size: 25px;
+    letter-spacing: 5px;
 }
 
 /* Web Projects */
 .hProject {
-    background: url(assets/nav_background.png) bottom no-repeat;
+    background: url(assets/bannerImages/nav_background.png) bottom no-repeat;
     background-color: #08000f;
     text-align: center;
     display: block;
@@ -267,7 +270,7 @@ ul.nobullet li {
 }
 
 .sProject {
-    background: url(assets/stardewMountains.png) bottom no-repeat;
+    background: url(assets/bannerImages/stardewMountains.png) bottom no-repeat;
     background-color: #5AD7ED;
     background-size: 100% 100%;
     text-align: center;
@@ -345,14 +348,16 @@ input:checked + .slider:before {
 .switch input {display:none;}
 
 /* Footer */ 
-.footer {
+#footer {
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    width: 80%;
+    width: 100%;
     text-align: center;
 
+}
+
+.copyright {
+    font-size: x-small;
 }
 
 /** {
