@@ -29,6 +29,7 @@ function getCookie(cname) {
     return "";
 };
 
+
 $('#checkbox').on("click", function(evt) {
     nightModeF();
     nightModeCookieToggle();
@@ -41,6 +42,8 @@ function nightModeF() {
     $("#projects").toggleClass("day night");
     $("#about").toggleClass("day night");
     $("#footer").toggleClass("day night");
+
+
 };
 
 function nightModeCookieToggle() {
