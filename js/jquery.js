@@ -3,7 +3,7 @@
 
 $(document).ready(function ( ) {
 	if(getCookie("nightmode")=="true") {
-        nightOn();
+        nightModeF();
     }
 });
 
@@ -29,9 +29,9 @@ function getCookie(cname) {
     return "";
 };
 
-
 $('#checkbox').on("click", function(evt) {
     nightModeF();
+    nightModeCookieToggle();
     evt.stopImmediatePropagation();
 });
 
@@ -41,5 +41,12 @@ function nightModeF() {
     $("#projects").toggleClass("day night");
     $("#about").toggleClass("day night");
     $("#footer").toggleClass("day night");
-    setCookie("nightmode","true",1);
+};
+
+function nightModeCookieToggle() {
+    if(getCookie("nightmode")=="false") {
+        setCookie("nightmode","true",1);
+    } else {
+        setCookie("nightmode","false",1);
+    }
 };
