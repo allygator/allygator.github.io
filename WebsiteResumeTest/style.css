@@ -1,0 +1,376 @@
+/*!
+ * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+}
+
+/*::-webkit-scrollbar { 
+    display: none; 
+}*/
+
+ @media (min-width:992px){
+    .container{
+        width: 9;
+    }
+}
+
+h1 {
+    font-size: 28px;
+    letter-spacing: 10px;
+}
+
+h2 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 24px "Lato", sans-serif;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 20px;
+    text-transform: uppercase; 
+}
+
+h4 {
+    font-size: 17px;
+}
+
+h5 {
+
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+ul.nobullet li {
+    list-style-type: none;
+}
+
+.secheader {
+    padding-top: 55px;
+    padding-bottom: 52px;
+}
+
+/* Background Info */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.day.bgimg-1 {
+  background-image: url("assets/bgImages/dayskyline.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url("assets/bgImages/garden.jpg");
+    min-height: 700px;
+    opacity: 0.65;
+}
+
+.bgimg-3 {
+  background-image: url("assets/bgImages/glass.jpg");
+  min-height: 400px;
+}
+
+/* Day Mode */ 
+.day {
+    border-color: #e7e7e7;
+    background-color:#FAFAFA;
+    color: #777;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.day hr {
+    border-top: 1px solid #eee;
+}
+
+.day a {
+    color: #1C1D21;
+}
+
+.day .navbar-nav>li>a:focus, .day .navbar-nav>li>a:hover, .day .navbar-header>a:focus, .day .navbar-header>a:hover, .day a:hover {
+    color: #9E2B62;
+}
+
+.day h2 {
+  color: #9E2B62;
+}
+
+.day h3 {
+    color: #9E2B62;
+}
+
+.day .navbar-nav>li>a {
+    color: #777;
+}
+
+.day .pbutton {
+    color: #FAFAFA;
+    background-color: #1C1D21;
+    border-color: #2C3032;
+}
+
+
+.day .pbutton:hover, .day .pbutton:focus {
+    color: #FAFAFA;
+    background-color: #9E2B62;
+    border-color: #9E2B62;
+}
+/*End Day*/
+
+/* Night Mode */
+.night {
+    border-color: #2C3032;
+    background-color:#353A3D;
+    color: #FAFAFA;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.night .navbar-nav>li>a, .night .navbar-header>a {
+    color: #f8f8f8;
+}
+
+.night a {
+    color: #f8f8f8;
+}
+
+.night a:hover, .night a:focus  {
+    color: #E4C3D1;
+}
+
+.night .pbutton {
+    border-color: #e7e7e7;
+    background-color:#FAFAFA;
+    color: #353A3D;
+}
+
+.night .pbutton:hover, .night .pbutton:focus {
+    color: #353A3D;
+    border-color: #D0B2BE;
+    background-color:#E4C3D1;
+}
+
+.night h3 {
+  color: #E4C3D1;
+}
+
+.night h4 {
+    color: #E4C3D1;
+}
+
+.night hr {
+    border-top: 1px solid #2C3032;
+}
+
+.night.bgimg-1 {
+  background-image: url("assets/bgImages/alaskasky.jpg");
+  min-height: 100%;
+}
+/*End Night*/
+
+/* Navigation */
+.startNav {
+    bottom: 0;
+}
+
+.navbar {
+    width:100%;
+    margin-bottom: 0;
+}
+
+.nightmodeh {
+    float:left;
+}
+
+.rightf {
+    float: right;
+}
+
+.leftf {
+    float: left;
+}
+
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 10px 0;
+        -webkit-transition: background .2s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .2s ease-in-out,padding .5s ease-in-out;
+        transition: background .2s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+    
+    .nightmodeh {
+        float:right;
+        padding-top: 10px;
+    }
+    
+    .sProject {
+        min-height: 188px;
+    }
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+}
+
+
+
+/* Intro Screen */ 
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+}
+
+#name {
+    min-width: 180px;
+    background-color: #222527;
+    color: #fff;
+    padding: 10px;
+    width:50%;
+    margin:auto;
+}
+
+#desc>p {
+    background-color: #222527;
+    color: #fff;
+    padding: 10px;
+    width:70%;
+    margin:auto;
+    margin-top:-2%;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+/* Web Projects */
+.hProject {
+    background: url(assets/bannerImages/nav_background.png) bottom no-repeat;
+    background-color: #08000f;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sProject {
+    background: url(assets/bannerImages/stardewMountains.png) bottom no-repeat;
+    background-color: #5AD7ED;
+    background-size: 100% 100%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    margin-bottom: 3%;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 57px;
+  height: 30px;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 1px;
+    right: 0;
+    bottom: 0;
+    background-color: #353A3D;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #FAFAFA;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #FAFAFA;
+}
+
+input:checked + .slider:before {
+    background-color:#353A3D;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #FAFAFA;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* Footer */ 
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+}
+
+.copyright {
+    font-size: x-small;
+}
+
+/** {
+    border: 1px solid red;
+}
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+*/
