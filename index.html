@@ -14,7 +14,8 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <!--<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">-->
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="style.css" rel="stylesheet">
@@ -34,7 +35,7 @@
 <body>
     
     <!-- Navigation -->
-        <nav style="" class="day navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav style="" class="day navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container" style="background:transparent;">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -70,8 +71,9 @@
                     </div>
                     <div class="rightf" style="">
                         <label class="switch" alt="Night Mode" id="nightMode">
-                        <input type="checkbox" id="checkbox">
+                        <input type="checkbox" id="checkbox" >
                         <div class="slider round"></div>
+                            <!--data-toggle="toggle" data-onstyle="default" class="toggle-off" data-style="ios"-->
                         </label>
                     </div>
                 </div>
@@ -81,7 +83,7 @@
 
     
     <!-- Page Content -->
-    <div class="bgimg-1" id="page-top"  class="mCustomScrollbar" data-mcs-theme="dark">
+    <div class="bgimg-1 day" id="page-top">
         <div class="caption">
             <div id="name">
                 <h1 class="border uppercase">Alyssa Davis</h1>
@@ -237,7 +239,7 @@
             <caption>I am an avid gamer, so my personal projects often lead me toward the games that I play. I attempt to merge my personal interests with my professional skills to improve the tools.</caption>
         </div>
     </div>
-    <div class="bgimg-1">
+    <div class="bgimg-1 day">
         <div id="footer" class="day footer">
             <div id="contact"><a href="mailto:amdavis2013@gmail.com" target="_top">Contact me</a></div>
             <div class="container copyright">
@@ -264,6 +266,7 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
@@ -274,3 +277,6 @@
 </body>
 
 </html>
+
+
+

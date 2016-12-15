@@ -42,6 +42,7 @@ function nightModeF() {
     $("#projects").toggleClass("day night");
     $("#about").toggleClass("day night");
     $("#footer").toggleClass("day night");
+    $(".bgimg-1").toggleClass("day night");
 
 
 };
@@ -53,3 +54,4 @@ function nightModeCookieToggle() {
         setCookie("nightmode","false",1);
     }
 };
+

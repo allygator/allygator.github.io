@@ -68,8 +68,9 @@ ul.nobullet li {
   background-size: cover;
 
 }
-.bgimg-1 {
-  background-image: url("assets/bgImages/alaskasky.jpg");
+
+.day.bgimg-1 {
+  background-image: url("assets/bgImages/dayskyline.jpg");
   min-height: 100%;
 }
 
@@ -130,6 +131,7 @@ ul.nobullet li {
     background-color: #9E2B62;
     border-color: #9E2B62;
 }
+/*End Day*/
 
 /* Night Mode */
 .night {
@@ -145,12 +147,12 @@ ul.nobullet li {
     color: #f8f8f8;
 }
 
-.night .navbar-nav>li>a:focus, .night .navbar-nav>li>a:hover, .night .navbar-header>a:focus, .night .navbar-header>a:hover {
-    color: #E4C3D1;
-}
-
 .night a {
     color: #f8f8f8;
+}
+
+.night a:hover, .night a:focus  {
+    color: #E4C3D1;
 }
 
 .night .pbutton {
@@ -160,6 +162,7 @@ ul.nobullet li {
 }
 
 .night .pbutton:hover, .night .pbutton:focus {
+    color: #353A3D;
     border-color: #D0B2BE;
     background-color:#E4C3D1;
 }
@@ -176,6 +179,12 @@ ul.nobullet li {
     border-top: 1px solid #2C3032;
 }
 
+.night.bgimg-1 {
+  background-image: url("assets/bgImages/alaskasky.jpg");
+  min-height: 100%;
+}
+/*End Night*/
+
 /* Navigation */
 .startNav {
     bottom: 0;
@@ -188,7 +197,6 @@ ul.nobullet li {
 
 .nightmodeh {
     float:left;
-    /*padding-top: 10px;*/
 }
 
 .rightf {
@@ -300,7 +308,6 @@ ul.nobullet li {
     right: 0;
     bottom: 0;
     background-color: #353A3D;
-    /*background-image: url(assets/favicon.png);*/
     -webkit-transition: .4s;
     transition: .4s;
 }
