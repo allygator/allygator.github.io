@@ -152,6 +152,10 @@ ul.nobullet li {
     color: #f8f8f8;
 }
 
+.night li a {
+    color: #E4C3D1;
+}
+
 .night .pbutton {
     border-color: #e7e7e7;
     background-color:#FAFAFA;
