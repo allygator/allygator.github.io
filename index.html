@@ -8,12 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-	<link rel="icon" href="assets/faviconnew.ico" type="image/x-icon" />
+	<link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
 
     <title>Alyssa Davis Portfolio Site</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">-->
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="style.css" rel="stylesheet">
@@ -33,7 +35,7 @@
 <body>
     
     <!-- Navigation -->
-        <nav style="" class="day navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav style="" class="day navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container" style="background:transparent;">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -69,8 +71,9 @@
                     </div>
                     <div class="rightf" style="">
                         <label class="switch" alt="Night Mode" id="nightMode">
-                        <input type="checkbox" id="checkbox">
+                        <input type="checkbox" id="checkbox" >
                         <div class="slider round"></div>
+                            <!--data-toggle="toggle" data-onstyle="default" class="toggle-off" data-style="ios"-->
                         </label>
                     </div>
                 </div>
@@ -80,27 +83,27 @@
 
     
     <!-- Page Content -->
-    <div class="bgimg-1" id="page-top">
+    <div class="bgimg-1 day" id="page-top">
         <div class="caption">
             <div id="name">
                 <h1 class="border uppercase">Alyssa Davis</h1>
             </div>
             <div id="desc">
-                <h2 class="border" id="sub">Student. Artist. Designer. Gamer.</h1>
+                <p class="border" id="desc sub">Student. Artist. Designer. Gamer.</p>
             </div>
       </div>
     </div>
     <div id="resume" class="day secheader">
         <div class="container">
             <div class="">
-                <h3 style="text-align:center;">Resume</h3>
+                <h2 style="text-align:center;">Resume</h2>
             </div>
              <div style="text-align:right;" class="rightf">
                  <a href="/assets/alyssaDavisResume.docx" target="_blank">Download</a>
             </div>
-            <h4>Education</h4>
+            <h3>Education</h3>
                 <ul class="nobullet">
-                    <li><h5>University of Central Florida</h5>
+                    <li><h4>University of Central Florida</h4>
                         <ul>
                             <li>Bachelor of Science in Computer Science
                             <ul>
@@ -110,12 +113,12 @@
                             </li>
                         </ul>
                         </li>
-                    <li><h5>Seminole State College</h5>
+                    <li><h4>Seminole State College</h4>
                         <ul>
                             <li>Associate of Arts</li>
                         </ul>
                     </li>
-                    <li><h5>Crooms Academy of Information Technology</h5>
+                    <li><h4>Crooms Academy of Information Technology</h4>
                         <ul>
                             <li>Classes on
                                 <ul>
@@ -152,7 +155,7 @@
                 <li>Designing front-end site for usability of target demographic using JavaScript, HTML, and CSS</li>
                 <li>Creating games to further Stress Reducing project goals</li>
             </ul>
-            <h5>Communications Department Intern</h5>
+            <h4>Communications Department Intern</h4>
             <div class="rightf">2013 - 2014</div>
             <p>Symantec Corporation</p>
             <ul class="nobullet">
@@ -160,14 +163,14 @@
                 <li>Presented search improvements for improving the customer support experience</li>
                 <li>Organized and lead team of interns facilitating their learning experiences in the company</li>
             </ul>
-            <h5>Engineering Department Intern</h5>
+            <h4>Engineering Department Intern</h4>
             <div class="rightf">2012 - 2014</div>
             <p>Symantec Corporation</p>
             <ul class="nobullet">
                 <li>Created and maintained internal Sharepoint sites for information gathering and reporting</li>
                 <li>Created and updated documents used to report and troubleshoot client issues</li>
             </ul>
-            <h4>Skills</h4>
+            <h3>Skills</h3>
             <ul class="nobullet">
                 <li>HMTL5</li>
                 <li>CSS3</li>
@@ -182,14 +185,14 @@
                 <li>Wordpress</li>
                 <li>Git</li>
             </ul>
-            <h4>Awards & Certifications</h4>
+            <h3>Awards & Certifications</h3>
                 <ul class="nobullet">
                     <li>Dreamweaver CS3, CS4, CS5 Certifications</li>
                     <li>A+ Certification</li>
                     <li>Symantec Women in Technology Scholarship</li>
                 </ul>
-            <h4>Volunteering</h4>
-            <h5>Computing Liaison and Social Media Consultant</h5>
+            <h3>Volunteering</h3>
+            <h4>Computing Liaison and Social Media Consultant</h4>
             <div class="rightf">2010 - Present</div>
             <p>Art Glass Guild of Central Florida</p>
             <ul class="nobullet">
@@ -208,20 +211,20 @@
     <div  id="projects" class="day secheader">
         <div class="container">
             <div class="">
-                <h3 style="text-align:center;">Projects</h3>
+                <h2 style="text-align:center;">Projects</h2>
             </div>
         <!-- Project One -->
         <div class="row">
             <div class="col-md-5 valign">
 				<div class="hProject" id="testing">
 					<a href="/HeroRotation/">
-						<img src="assets/logo.png" alt="Heroes of the Storm Website Banner">
+						<img src="assets/bannerImages/logo.png" alt="Heroes of the Storm Website Banner">
 					</a>
 				</div>
             </div>
             <div class="col-md-7">
-                <h4>Heroes of the Storm Site</h4>
-                <h5>Free Hero Rotation</h5>
+                <h3>Heroes of the Storm Site</h3>
+                <h4>Free Hero Rotation</h4>
                 <p>Heroes of the Storm is a Blizzard Entertainment created team brawl game. Every week there is a set of characters free to play by all players, this site gives users this list of characters, and additional info about each one.</p>
                 <p>The website updates from a shell script that runs a Java file and pushes to Github. The Java file includes options to run through the html of a forum post and pulls out the date and the free Hero rotation, it also downloads all hero ability information for the Javascript file, and finally it downloads all available images for all heroes and saves them into the proper file path to be used on the website. It updates the Javascript file with any updated information.</p>
                 <a class="pbutton btn" href="/HeroRotation/">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -229,20 +232,20 @@
         </div>
         <!-- /.row -->
 
-        <hr>
+        <hr />
 
         <!-- Project Two -->
         <div class="row">
             <div class="col-md-5  valign">
                 <div class="sProject" id="testing">
                     <a href="/StardewValley/">
-                        <img src="assets/stardewbanner.png" alt="Stardew Valley Website Banner" style="max-width:100%;">
+                        <img src="assets/bannerImages/stardewbanner.png" alt="Stardew Valley Website Banner" style="max-width:100%;">
                     </a>
                 </div>
             </div>
             <div class="col-md-7">
-                <h4>Stardew Valley Site</h4>
-                <h5>Item Lookup</h5>
+                <h3>Stardew Valley Site</h3>
+                <h4>Item Lookup</h4>
                 <p>Stardew Valley is a recently released open-ended country-life RPG created by ConcernedApe. This site allows players to look up items they find while playing to determine if the item has any uses. It was created due to the difficulty in finding items on other sites.</p>
                 <a class="pbutton btn" href="/StardewValley/">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
@@ -256,16 +259,24 @@
         </div>
     <div id="about" class="day secheader">
         <div class="container">
+<<<<<<< HEAD
             <div class="row">
                 <h3 style="text-align:center;">About Me</h3>
                 <caption>I am an avid gamer, so my personal projects often lead me toward the games that I play. I attempt to merge my personal interests with my professional skills to improve the tools that I use with those games. I am also an avid traveler, and I enjoy spending time with my cat. The background images shown here were all taken by me.</caption>
             </div>
+=======
+            <h2 style="text-align:center;">About Me</h2>
+            <caption>I am an avid gamer, so my personal projects often lead me toward the games that I play. I attempt to merge my personal interests with my professional skills to improve the tools.</caption>
+>>>>>>> 5302d8581f777484b0839217fc24fb60d8eb180b
         </div>
     </div>
-    <div class="bgimg-1">
+    <div class="bgimg-1 day">
         <div id="footer" class="day footer">
-            <div>
-                <div id="blizzc">©2014 Blizzard Entertainment, Inc. All rights reserved. Heroes of the Storm is a trademark of Blizzard Entertainment, Inc.</div>
+            <div id="contact"><a href="mailto:amdavis2013@gmail.com" target="_top">Contact me</a></div>
+            <div class="container copyright">
+                <div id="me">&copy; 2016 Alyssa Davis. All Rights Reserved.</div>
+                <div id="blizzc">Heroes of the Storm Images: ©2014 Blizzard Entertainment, Inc. All rights reserved. Heroes of the Storm is a trademark of Blizzard Entertainment, Inc.</div>
+                <div id="sdvc">Stardew Valley Images: Copyright 2012 Chucklefish LTD.</div>
             </div>
         </div>
     </div>
@@ -274,16 +285,24 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!--<script>
+        (function($){
+            $(window).on("load",function(){
+                $("body").mCustomScrollbar();
+            });
+        })(jQuery);
+    </script>-->
     
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jqueryscroll.js"></script>
     <script src="js/jquery.js"></script>
-    <!-- <script src="js/jqueryedit.js"></script> -->
     
 
 </body>
