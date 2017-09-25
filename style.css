@@ -151,11 +151,11 @@ ul.nobullet li {
     color: #f8f8f8;
 }
 
-<<<<<<< HEAD
 .night li a {
-=======
-.night a:hover, .night a:focus  {
->>>>>>> 5302d8581f777484b0839217fc24fb60d8eb180b
+    color: #E4C3D1;
+}
+
+.night li a:hover, .night a:focus  {
     color: #E4C3D1;
 }
 
