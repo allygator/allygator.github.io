@@ -11,12 +11,43 @@ body, html {
     font: 400 15px/1.8 "Lato", sans-serif;
 }
 
-/*::-webkit-scrollbar { 
-    display: none; 
+.header {
+    background: url(assets/bgImages/aging-summit.jpg) no-repeat center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+#nameContainer {
+    width: 40%;
+    margin: auto;
+    position: absolute;
+    top: 32%;
+    left: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nameContainer h1 {
+    background-color: #474747;
+    color: white;
+    padding: 5px 2px 5px 13px;
+    font-size: 35px;
+}
+
+#nameContainer p {
+    background-color: #474747;
+    color: white;
+    font-size: 18px;
+}
+
+/*::-webkit-scrollbar {
+    display: none;
 }*/
 
  @media (min-width:992px){
-    .container{
+    .container {
         width: 9;
     }
 }
@@ -35,7 +66,7 @@ h2 {
 
 h3 {
     font-size: 20px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 h4 {
@@ -59,157 +90,6 @@ ul.nobullet li {
     padding-bottom: 52px;
 }
 
-/* Background Info */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-.bgimg-1 {
-  background-image: url("assets/bgImages/dayskyline.jpg");
-  min-height: 100%;
-}
-
-.bgimg-2 {
-    background-image: url("assets/bgImages/garden.jpg");
-    min-height: 700px;
-    opacity: 0.65;
-}
-
-.bgimg-3 {
-  background-image: url("assets/bgImages/glass.jpg");
-  min-height: 400px;
-}
-
-/* Day Mode */ 
-.day {
-    border-color: #e7e7e7;
-    background-color:#FAFAFA;
-    color: #777;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-}
-
-.day hr {
-    border-top: 1px solid #eee;
-}
-
-.day a {
-    color: #1C1D21;
-}
-
-.day .navbar-nav>li>a:focus, .day .navbar-nav>li>a:hover, .day .navbar-header>a:focus, .day .navbar-header>a:hover, .day a:hover {
-    color: #9E2B62;
-}
-
-.day h2 {
-  color: #9E2B62;
-}
-
-.day h3 {
-    color: #9E2B62;
-}
-
-.day .navbar-nav>li>a {
-    color: #777;
-}
-
-.day .pbutton {
-    color: #FAFAFA;
-    background-color: #1C1D21;
-    border-color: #2C3032;
-}
-
-
-.day .pbutton:hover, .day .pbutton:focus {
-    color: #FAFAFA;
-    background-color: #9E2B62;
-    border-color: #9E2B62;
-}
-/*End Day*/
-
-/* Night Mode */
-.night {
-    border-color: #2C3032;
-    background-color:#353A3D;
-    color: #FAFAFA;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-}
-
-.night .navbar-nav>li>a, .night .navbar-header>a {
-    color: #f8f8f8;
-}
-
-.night a {
-    color: #f8f8f8;
-}
-
-.night li a {
-    color: #E4C3D1;
-}
-
-.night li a:hover, .night a:focus  {
-    color: #E4C3D1;
-}
-
-.night .pbutton {
-    border-color: #e7e7e7;
-    background-color:#FAFAFA;
-    color: #353A3D;
-}
-
-.night .pbutton:hover, .night .pbutton:focus {
-    color: #353A3D;
-    border-color: #D0B2BE;
-    background-color:#E4C3D1;
-}
-
-.night h3 {
-  color: #E4C3D1;
-}
-
-.night h4 {
-    color: #E4C3D1;
-}
-
-.night hr {
-    border-top: 1px solid #2C3032;
-}
-
-.night.bgimg-1 {
-  background-image: url("assets/bgImages/alaskasky.jpg");
-  min-height: 100%;
-}
-/*End Night*/
-
-/* Navigation */
-.startNav {
-    bottom: 0;
-}
-
-.navbar {
-    width:100%;
-    margin-bottom: 0;
-}
-
-.nightmodeh {
-    float:left;
-}
-
-.rightf {
-    float: right;
-}
-
-.leftf {
-    float: left;
-}
 
 
 @media(min-width:767px) {
@@ -223,12 +103,12 @@ ul.nobullet li {
     .top-nav-collapse {
         padding: 0;
     }
-    
+
     .nightmodeh {
         float:right;
         padding-top: 10px;
     }
-    
+
     .sProject {
         min-height: 188px;
     }
@@ -241,7 +121,7 @@ ul.nobullet li {
 
 
 
-/* Intro Screen */ 
+/* Intro Screen */
 .caption {
     position: absolute;
     top: 50%;
@@ -358,7 +238,7 @@ input:checked + .slider:before {
 /* Hide default HTML checkbox */
 .switch input {display:none;}
 
-/* Footer */ 
+/* Footer */
 #footer {
     position: absolute;
     bottom: 0;
