@@ -19,7 +19,7 @@ class About extends Component {
 				<p>I am an avid traveler. I&#39;ve been to 4 countries, 2 continents, every state on both American coastlines and over half of all the states total. <span className="emphasis">Hawaii is my white whale.</span></p>
 			</div>
 			<div id="gamer">
-				<p>I have played video games for as long as I can remember, and video games are where my development path started. Most of my personal projects have come about out of a personal or community need for something related to a game I play. My first interaction with the dev world was signatures and player profiles in Neopets.</p>
+				<p>I have played video games for as long as I can remember, and video games are where my development path started. Most of my personal projects have come out of a personal or community need for something related to a game I play. My first interaction with the dev world was signatures and player profiles in Neopets.</p>
 			</div>
 		</div>
 	);

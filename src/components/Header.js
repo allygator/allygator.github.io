@@ -7,7 +7,7 @@ class Header extends Component {
         <div id="navContainer">
             <nav>
                 <a href="#about">About</a>
-                <a href="#about">Projects</a>
+                <a href="#projects">Projects</a>
                 <a href="#about">Contact</a>
             </nav>
             </div>
