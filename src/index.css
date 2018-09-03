@@ -4,10 +4,29 @@ body {
   font-family: sans-serif;
 }
 
-.header {
-    background: url(public/bgImages/aging-summit.jpg) no-repeat center fixed;
+header {
+    background: url(/bgImages/aging-summit.jpg) no-repeat center fixed;
     background-size: cover;
     height: 100vh;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+    padding: 10px 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(#D5E8F9,#B4D3EC);
+    color: #13121A;
+    border-bottom-left-radius: 6px;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
 }
 
 #nameContainer {
@@ -23,14 +42,15 @@ body {
 }
 
 #nameContainer h1 {
-    background-color: #474747;
+    background-color: #13121A;
     color: white;
-    padding: 5px 2px 5px 13px;
+    padding: 5px 5px 5px 14px;
     font-size: 35px;
+    letter-spacing: 10px;
 }
 
 #nameContainer p {
-    background-color: #474747;
+    background-color: #13121A;
     color: white;
     font-size: 18px;
 }
