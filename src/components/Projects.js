@@ -4,7 +4,7 @@ import '../Projects.css';
 class Projects extends Component {
   render() {
 	return (
-		<div id="projects">
+		<section id="projects">
 			<h2>Projects</h2>
             <div className="projectContainer" id="wProject">
 				<div className="imageContainer">
@@ -45,7 +45,7 @@ class Projects extends Component {
                     <a className="button" href="https://allygator.github.io/StardewValley/">View Project <i className="fas fa-chevron-right"></i></a>
                 </div>
             </div>
-		</div>
+		</section>
 	);
   }
 }

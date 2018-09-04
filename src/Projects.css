@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500|Oswald:300,400,500,600');
+
 @media screen and (max-width: 500px) {
     .App .projectContainer {
         flex-direction: column;
+        padding: 4% 0;
     }
 
     .App .projectContainer:not(:last-child) {

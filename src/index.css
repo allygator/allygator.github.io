@@ -83,17 +83,19 @@ nav a:after {
     background-color: #13121A;
     color: white;
     font-size: 18px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
+    padding: 4px;
 }
 
-.App>div {
+.App>section {
     background-color: #13121A;
     color: white;
 }
 
-.App>div h2 {
+.App>section h2 {
     margin: 0;
+    padding: 10px 0;
     font-size: 32px;
     letter-spacing: 4px;
 }
