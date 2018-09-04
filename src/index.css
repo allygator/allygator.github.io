@@ -9,6 +9,10 @@
         color: white;
     }
 
+    .App #nameContainer p {
+        width: 100%;
+    }
+
     .App #nameContainer {
         width: 100%;
     }
