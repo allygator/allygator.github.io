@@ -1,28 +1,63 @@
-/* #about {
-    background-color: #13121A;
-    color: #C6DFF5;
+@media screen and (max-width: 500px) {
+    .App .projectContainer {
+        flex-direction: column;
+    }
+
+    .App .projectContainer:not(:last-child) {
+        border-bottom: 2px solid white;
+    }
+
+    .App .projectContainer .imageContainer {
+        width: 100%;
+    }
+
+    .projectContainer .descContainer {
+        width: 100%;
+    }
+}
+
+.projectContainer {
+    width: 80%;
+    margin: auto;
+    padding: 2% 0;
     display: flex;
-    flex-direction: column;
-    padding: 10px 10%;
+    flex-direction: row;
 }
 
-#about h2 {
-    flex: 0 0 99%;
-    margin: 0;
-    font-size: 32px;
-    width: 100%;
+.projectContainer:not(:last-child) {
+    border-bottom: 2px solid white;
 }
 
-#about div {
-    width: 40%;
+.projectContainer .imageContainer {
+    width: 35%;
+    height: 35%;
+    margin: auto;
 }
 
-#about div:nth-child(2n+1) {
-    margin-right: 0;
-    margin-left: auto;
+.projectContainer img {
+    max-width: 100%;
 }
 
-.emphasis {
-    font-weight: bold;
-    color: #DBBEC6;
-} */
+.descContainer {
+    width: 60%;
+    margin: auto;
+}
+
+.descContainer p {
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+
+#hProject .imageContainer {
+    background: url(/bannerImages/nav_background.png) bottom no-repeat;
+    background-color: #08000f;
+}
+
+#sProject .imageContainer {
+    background: url(/bannerImages/stardewMountains.png) bottom no-repeat;
+    background-size: 100%;
+}
+
+#sProject img {
+    margin-bottom: -9px;
+}

@@ -103,3 +103,24 @@ nav a:after {
     background-size: cover;
     height: 500px;
 }
+
+.button {
+    background-color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+    margin-right: auto;
+    text-decoration: none;
+    color: #52516D;
+}
+
+.button:hover {
+    background-color: #13121A;
+    color: #B7B5F4;
+    border: 1px solid white;
+}
+
+.button i {
+    margin-left: 5px;
+}

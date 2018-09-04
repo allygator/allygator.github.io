@@ -6,32 +6,43 @@ class Projects extends Component {
 	return (
 		<div id="projects">
 			<h2>Projects</h2>
-            <div className="projectContainer">
-				<div>
-					<a href="/HeroRotation/">
-						<img src="/bannerImages/logo.png" alt="Heroes of the Storm Website Banner" />
+            <div className="projectContainer" id="wProject">
+				<div className="imageContainer">
+					<a href="repcalc.net">
+						<img src="/bannerImages/wow-logo.jpg" alt="World of Warcraft logo" />
 					</a>
 				</div>
-                <div>
-                    <h3>Heroes of the Storm Site</h3>
-                    <h4>Free Hero Rotation</h4>
-                    <p>Heroes of the Storm is a Blizzard Entertainment created team brawl game. Every week there is a set of characters free to play by all players, this site gives users this list of characters, and additional info about each one.</p>
-                    <p>The website updates from a shell script that runs a Java file and pushes to Github. The Java file includes options to run through the html of a forum post and pulls out the date and the free Hero rotation, it also downloads all hero ability information for the Javascript file, and finally it downloads all available images for all heroes and saves them into the proper file path to be used on the website. It updates the Javascript file with any updated information.</p>
-                    <a href="allygator.github.io/HeroRotation/">View Project</a>
+                <div className="descContainer">
+                    <h3>World of Warcraft Reputation Calculator</h3>
+                    <p>World of Warcraft is a long running MMORPG published by Blizzard Entertainment. The website allows users to lookup their reputation with all the factions in the game. Users can see how long it will take to complete specific factions, determined by the methods in which reptation can be gained. The site leverages the Blizzard API for character data and was created using ReactJS.</p>
+                    <a className="button" href="repcalc.net">View Project <i className="fas fa-chevron-right"></i></a>
                 </div>
             </div>
 
-            <div className="projectContainer">
-                    <div>
-                        <a href="/StardewValley/">
-                            <img src="/bannerImages/stardewbanner.png" alt="Stardew Valley Website Banner" />
-                        </a>
-                    </div>
-                <div>
-                    <h3>Stardew Valley Site</h3>
-                    <h4>Item Lookup</h4>
-                    <p>Stardew Valley is a recently released open-ended country-life RPG created by ConcernedApe. This site allows players to look up items they find while playing to determine if the item has any uses. It was created due to the difficulty in finding items on other sites.</p>
-                    <a href="allygator.github.io/StardewValley/">View Project</a>
+            <div className="projectContainer" id="hProject">
+				<div className="imageContainer">
+					<a href="allygator.github.io/HeroRotation/">
+						<img src="/bannerImages/heroes-logo.png" alt="Heroes of the Storm Website Banner" />
+					</a>
+				</div>
+                <div className="descContainer">
+                    <h3>Heroes of the Storm Free Hero Rotation</h3>
+                    <p>Heroes of the Storm is a Blizzard Entertainment team brawl game. Every week there is a set of characters free to play by all players, this site gives users this list of characters, and additional info about each one.</p>
+                    <p>A Java file was written to parse through text and image data on the Blizzard website. This is saved locally and pushed to the GitHub repository through a shell script. The Java file includes options to parse through the weekly post of free characters, or download hero ability information, or download images for hero portraits and ability icons.</p>
+                    <a className="button" href="allygator.github.io/HeroRotation/">View Project <i className="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+            <div className="projectContainer" id="sProject">
+                <div className="imageContainer">
+                    <a href="allygator.github.io/StardewValley/">
+                        <img src="/bannerImages/stardewbanner.png" alt="Stardew Valley Website Banner" />
+                    </a>
+                </div>
+                <div className="descContainer">
+                    <h3>Stardew Valley Item Lookup Tool</h3>
+                    <p>Stardew Valley is an open-ended country-life RPG created by ConcernedApe. This site allows players to look up items they find while playing the game to determine what uses an item may have, as some items are quite rare and might be needed much later in the game. The site was created as a solution to the difficulty in looking up item uses on other sites.</p>
+                    <a className="button" href="allygator.github.io/StardewValley/">View Project <i className="fas fa-chevron-right"></i></a>
                 </div>
             </div>
 		</div>
