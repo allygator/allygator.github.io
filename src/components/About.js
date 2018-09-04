@@ -6,6 +6,13 @@ class About extends Component {
 	return (
 		<div id="about">
 			<h2>About Me</h2>
+            <section id="contact">
+            <p>Find me:&nbsp;&nbsp;
+            <a href="https://github.com/allygator"><i className="fab fa-github"></i> Allygator</a>&nbsp;&nbsp;
+            <a href="mailto:amdavis2013@gmail.com"><i className="fas fa-envelope"></i> Email</a>&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/alyssa-m-davis/"><i className="fab fa-linkedin"></i> Linkedin</a>
+            </p>
+            </section>
 			<section id="student">
 				<p>Hi, I&#39;m Alyssa Davis. I am a student at the University of Central Florida studying <span className="emphasis">Computer Science</span> along with minors in <span className="emphasis">Engineering Leadership</span> and <span className="emphasis">Business.</span></p>
 			</section>
