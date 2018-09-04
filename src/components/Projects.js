@@ -15,7 +15,7 @@ class Projects extends Component {
                 <div className="descContainer">
                     <h3>World of Warcraft Reputation Calculator</h3>
                     <p>World of Warcraft is a long running MMORPG published by Blizzard Entertainment. The website allows users to lookup their reputation with all the factions in the game. Users can see how long it will take to complete specific factions, determined by the methods in which reptation can be gained. The site leverages the Blizzard API for character data and was created using ReactJS.</p>
-                    <a className="button" href="repcalc.net">View Project <i className="fas fa-chevron-right"></i></a>
+                    <a className="button" href="https://repcalc.net">View Project <i className="fas fa-chevron-right"></i></a>
                 </div>
             </div>
 
@@ -29,7 +29,7 @@ class Projects extends Component {
                     <h3>Heroes of the Storm Free Hero Rotation</h3>
                     <p>Heroes of the Storm is a Blizzard Entertainment team brawl game. Every week there is a set of characters free to play by all players, this site gives users this list of characters, and additional info about each one.</p>
                     <p>A Java file was written to parse through text and image data on the Blizzard website. This is saved locally and pushed to the GitHub repository through a shell script. The Java file includes options to parse through the weekly post of free characters, or download hero ability information, or download images for hero portraits and ability icons.</p>
-                    <a className="button" href="allygator.github.io/HeroRotation/">View Project <i className="fas fa-chevron-right"></i></a>
+                    <a className="button" href="https://allygator.github.io/HeroRotation/">View Project <i className="fas fa-chevron-right"></i></a>
                 </div>
             </div>
 
