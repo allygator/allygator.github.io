@@ -8,7 +8,6 @@ class Header extends Component {
             <nav>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
-                <a href="#about">Contact</a>
             </nav>
             </div>
             <div id="nameContainer">
