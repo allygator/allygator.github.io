@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=family=Montserrat:400,500|Oswald:300,400,500,600');
+
+@media screen and (max-width: 500px) {
+    #navContainer nav {
+        position: relative;
+        width: 100%;
+        border-radius: 0;
+        background-color: #13121A;
+        color: white;
+    }
+
+    .App #nameContainer {
+        width: 100%;
+    }
+
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -16,7 +33,7 @@ nav {
     top: 0;
     width: 30%;
     padding: 10px 0;
-    font-size: 20px;
+    font-size: 22px;
     display: flex;
     justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.3);
@@ -27,6 +44,19 @@ nav {
 nav a {
     color: inherit;
     text-decoration: none;
+}
+
+nav a:hover:after {
+    width: 100%;
+}
+
+nav a:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width .3s;
 }
 
 #nameContainer {
@@ -46,13 +76,24 @@ nav a {
     color: white;
     padding: 5px 5px 5px 14px;
     font-size: 35px;
-    letter-spacing: 10px;
+    letter-spacing: 14px;
 }
 
 #nameContainer p {
     background-color: #13121A;
     color: white;
     font-size: 18px;
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
+}
+
+.App>div {
+    background-color: #13121A;
+    color: white;
+}
+
+.App>div h2 {
+    margin: 0;
 }
 
 #millican {

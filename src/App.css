@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=family=Montserrat:400,500|Oswald:300,400,500,600');
+
 .App {
   text-align: center;
   font-size: 1.5em;
+  font-family: 'Oswald', sans-serif;
 }
 
 .App-logo {
