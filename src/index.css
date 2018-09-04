@@ -94,6 +94,8 @@ nav a:after {
 
 .App>div h2 {
     margin: 0;
+    font-size: 32px;
+    letter-spacing: 4px;
 }
 
 #millican {
