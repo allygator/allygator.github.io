@@ -8,7 +8,7 @@ class Projects extends Component {
 			<h2>Projects</h2>
             <div className="projectContainer" id="wProject">
 				<div className="imageContainer">
-					<a href="repcalc.net">
+					<a href="https://repcalc.net">
 						<img src="/bannerImages/wow-logo.jpg" alt="World of Warcraft logo" />
 					</a>
 				</div>
@@ -21,7 +21,7 @@ class Projects extends Component {
 
             <div className="projectContainer" id="hProject">
 				<div className="imageContainer">
-					<a href="allygator.github.io/HeroRotation/">
+					<a href="https://allygator.github.io/HeroRotation/">
 						<img src="/bannerImages/heroes-logo.png" alt="Heroes of the Storm Website Banner" />
 					</a>
 				</div>
@@ -35,14 +35,14 @@ class Projects extends Component {
 
             <div className="projectContainer" id="sProject">
                 <div className="imageContainer">
-                    <a href="allygator.github.io/StardewValley/">
+                    <a href="https://allygator.github.io/StardewValley/">
                         <img src="/bannerImages/stardewbanner.png" alt="Stardew Valley Website Banner" />
                     </a>
                 </div>
                 <div className="descContainer">
                     <h3>Stardew Valley Item Lookup Tool</h3>
                     <p>Stardew Valley is an open-ended country-life RPG created by ConcernedApe. This site allows players to look up items they find while playing the game to determine what uses an item may have, as some items are quite rare and might be needed much later in the game. The site was created as a solution to the difficulty in looking up item uses on other sites.</p>
-                    <a className="button" href="allygator.github.io/StardewValley/">View Project <i className="fas fa-chevron-right"></i></a>
+                    <a className="button" href="https://allygator.github.io/StardewValley/">View Project <i className="fas fa-chevron-right"></i></a>
                 </div>
             </div>
 		</div>
