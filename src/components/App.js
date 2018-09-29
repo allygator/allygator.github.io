@@ -1,20 +1,14 @@
 import React, { Component } from 'react';
-import Header from './Header';
-import About from './About';
-import Projects from './Projects';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import Main from './Main';
 import '../App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Header />
-        <About />
-        <div id="millican"></div>
-        <Projects />
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div className="App">
+    <Switch>
+      <Route exact path='/' component={Main}/>
+    </Switch>
+  </div>
+)
 
 export default App;
