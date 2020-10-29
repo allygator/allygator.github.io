@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Header extends Component {
-  render() {
+function Header() {
     return (
         <header className="App-header">
         <div id="navContainer">
@@ -11,12 +10,11 @@ class Header extends Component {
             </nav>
             </div>
             <div id="nameContainer">
-                <h1>Alyssa Davis</h1>
+                <h1>I'm Alyssa</h1>
                 <p>Student. Developer. Artist. Traveler. Gamer.</p>
             </div>
         </header>
     );
   }
-}
 
 export default Header;
